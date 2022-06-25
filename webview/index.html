@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <meta
+      http-equiv="Content-Security-Policy"
+      content="default-src 'none'; img-src %CSP_SOURCE% data: https:; script-src %CSP_SOURCE%; style-src 'unsafe-inline' %CSP_SOURCE%;"
+    />
+    <title>Screeny</title>
+    <link rel="stylesheet" href="./style.css" />
+    <script
+      src="../node_modules/dom-to-image-even-more/dist/dom-to-image-more.min.js"
+      async
+    ></script>
+    <script src="./src/index.js" type="module"></script>
+  </head>
+
+  <body>
+    <div id="save-container">
+      <svg
+        id="save"
+        class="shutter"
+        version="1.1"
+        xmlns="http://www.w3.org/2000/svg"
+        xmlns:xlink="http://www.w3.org/1999/xlink"
+        x="0px"
+        y="0px"
+        viewBox="0 0 491.52 491.52"
+        style="enable-background: new 0 0 491.52 491.52"
+        xml:space="preserve"
+      >
+        <path
+          style="fill: #e1e6e9"
+          d="M427.889,0H63.631C28.488,0,0,28.488,0,63.63v364.258c0,35.143,28.488,63.631,63.631,63.631h364.257
+	c35.143,0,63.631-28.489,63.631-63.631V63.63C491.52,28.488,463.031,0,427.889,0z"
+        />
+        <rect
+          y="164.966"
+          style="fill: #e56353"
+          width="491.52"
+          height="161.623"
+        />
+        <circle style="fill: #d5d6db" cx="245.76" cy="254.73" r="161.608" />
+        <circle style="fill: #ffffff" cx="245.76" cy="245.76" r="161.608" />
+        <circle style="fill: #3a556a" cx="245.76" cy="245.76" r="120.402" />
+        <circle style="fill: #64798a" cx="245.76" cy="245.76" r="101.545" />
+        <circle style="fill: #3a556a" cx="245.76" cy="245.76" r="85.135" />
+        <circle style="fill: #2f4859" cx="245.76" cy="245.76" r="44.6" />
+        <circle style="fill: #64798a" cx="271.099" cy="220.416" r="19.261" />
+        <circle style="fill: #e56353" cx="424.346" cy="67.174" r="22.482" />
+        <g></g>
+        <g></g>
+        <g></g>
+        <g></g>
+        <g></g>
+        <g></g>
+        <g></g>
+        <g></g>
+        <g></g>
+        <g></g>
+        <g></g>
+        <g></g>
+        <g></g>
+        <g></g>
+        <g></g>
+      </svg>
+    </div>
+
+    <div id="snippet-scroll">
+      <div id="snippet-container">
+        <div id="window">
+          <div id="navbar">
+            <div id="window-controls">
+              <div class="red dot"></div>
+              <div class="yellow dot"></div>
+              <div class="green dot"></div>
+            </div>
+            <div id="window-title"></div>
+          </div>
+          <div id="snippet"></div>
+        </div>
+      </div>
+    </div>
+
+    <div id="flash-fx"></div>
+  </body>
+</html>

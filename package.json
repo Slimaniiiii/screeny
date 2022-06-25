@@ -1,0 +1,141 @@
+{
+  "name": "screeny",
+  "displayName": "screeny",
+  "description": "A vscode extension that allows you to take code screenshots",
+  "version": "0.0.1",
+  "engines": {
+    "vscode": "^1.68.0"
+  },
+  "keywords": [
+    "screenshot",
+    "snippet",
+    "screen",
+    "clipboard",
+    "share",
+    "screeny",
+    "Houssem",
+    "Houssem Slimani"
+  ],
+  "categories": [
+    "Other"
+  ],
+  "activationEvents": [
+    "onCommand:screeny.start"
+  ],
+  "main": "./extension.js",
+  "contributes": {
+    "commands": [
+      {
+        "command": "screeny.start",
+        "title": "screeny"
+      }
+    ]
+  },
+  "menus": {
+    "editor/context": [
+      {
+        "command": "screeny.start"
+      }
+    ]
+  },
+  "configuration": {
+    "type": "object",
+    "title": "screeny",
+    "properties": {
+      "screeny.backgroundColor": {
+        "scope": "resource",
+        "type": "string",
+        "default": "#abb8c3",
+        "description": "The background color of the snippet's container"
+      },
+      "screeny.boxShadow": {
+        "scope": "resource",
+        "type": "string",
+        "default": "rgba(0, 0, 0, 0.55) 0px 20px 68px",
+        "description": "The CSS box-shadow for the snippet"
+      },
+      "screeny.containerPadding": {
+        "scope": "resource",
+        "type": "string",
+        "default": "3em",
+        "description": "The padding for the snippet's container"
+      },
+      "screeny.roundedCorners": {
+        "scope": "resource",
+        "type": "boolean",
+        "default": true,
+        "description": "Use rounded corners for the window"
+      },
+      "screeny.showWindowControls": {
+        "scope": "resource",
+        "type": "boolean",
+        "default": true,
+        "description": "Display OS X style window controls"
+      },
+      "screeny.showWindowTitle": {
+        "scope": "resource",
+        "type": "boolean",
+        "default": false,
+        "description": "Display window title with open folder / file name"
+      },
+      "screeny.showLineNumbers": {
+        "scope": "resource",
+        "type": "boolean",
+        "default": true,
+        "description": "Display line numbers"
+      },
+      "screeny.realLineNumbers": {
+        "scope": "resource",
+        "type": "boolean",
+        "default": false,
+        "description": "Start from the selection's line number instead of 1"
+      },
+      "screeny.transparentBackground": {
+        "scope": "resource",
+        "type": "boolean",
+        "default": false,
+        "description": "Use a transparent background when taking the screenshot"
+      },
+      "screeny.target": {
+        "scope": "resource",
+        "type": "string",
+        "enum": [
+          "container",
+          "window"
+        ],
+        "default": "container",
+        "description": "Take the shot with or without the container"
+      },
+      "screeny.shutterAction": {
+        "scope": "resource",
+        "type": "string",
+        "enum": [
+          "save",
+          "copy"
+        ],
+        "default": "save",
+        "description": "The behavior of the shutter button"
+      }
+    }
+  },
+  "scripts": {
+    "lint": "eslint .",
+    "pretest": "npm run lint",
+    "test": "node ./test/runTest.js"
+  },
+  "devDependencies": {
+    "@types/glob": "^7.2.0",
+    "@types/mocha": "^9.1.1",
+    "@types/node": "16.x",
+    "@types/vscode": "^1.68.0",
+    "@vscode/test-electron": "^2.1.3",
+    "eslint": "^8.16.0",
+    "glob": "^8.0.3",
+    "mocha": "^10.0.0",
+    "typescript": "^4.7.2"
+  },
+  "dependencies": {
+    "dom-to-image-even-more": "^1.0.4",
+    "prettier": "^2.7.1"
+  }
+}
