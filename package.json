@@ -2,6 +2,7 @@
   "name": "screeny",
   "displayName": "screeny",
   "description": "A vscode extension that allows you to take code screenshots",
+  "publisher": "HoussemSlimani",
   "version": "0.0.1",
   "engines": {
     "vscode": "^1.68.0"
@@ -136,6 +137,7 @@
   },
   "dependencies": {
     "dom-to-image-even-more": "^1.0.4",
-    "prettier": "^2.7.1"
+    "prettier": "^2.7.1",
+    "vsce": "^2.9.2"
   }
 }
