@@ -13,8 +13,10 @@ A vscode extension that allows you to take code screenshots.
 ## Screenshot Examples
 
 ![ScreenShot](./screenshots/snippet.png)
+
 ![ScreenShot](./screenshots/snippet2.png)
 
 ## Vscode theme used
 [Sovereign Extension](https://marketplace.visualstudio.com/items?itemName=HoussemSlimani.sovereign&ssr=false#overview),
+
 [Sovereign Github](https://github.com/Slimaniiiii/Sovereign)
