@@ -3,6 +3,10 @@
   "displayName": "screeny",
   "description": "A vscode extension that allows you to take code screenshots",
   "publisher": "HoussemSlimani",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/Slimaniiiii/screeny/"
+},
   "version": "0.0.1",
   "engines": {
     "vscode": "^1.68.0"
